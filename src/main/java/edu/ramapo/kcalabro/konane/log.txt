@@ -1,0 +1,324 @@
+17 January 2018
+
+    ; Models:
+        ; Created the Board class (5 minutes).
+
+        ; Created the Game class (5 minutes).
+
+        ; Created the Player class (5 minutes).
+
+        ; Implemented the Player class in its entirety (25 minutes).
+
+        ; Created the Human class (10 minutes).
+
+        ; Implemented getter/setters and constructor for the game class (30 minutes).
+
+        ; Extended the Player class to include a variable for the color of stones being used
+        ; by the given player (10 minutes).
+
+        ; Began implementing the Board class, the board now initializes and populates properly (40 minutes).
+
+        ; Discovered an issue where the array of players was not properly being initialized
+        ; in the Game class constructor (15 minutes).
+
+    ; Views:
+        ; Created and implemented the MainActivity class (20 minutes).
+
+        ; Created the GameActivity class (10 minutes).
+
+        ; Discovered an issue where the New Game button of MainActivity was not properly
+        ; launching the GameActivity. Simply forgot to add the GameActivity to the Android
+        ; Manifest file (25 minutes).
+
+    ; Layouts
+        ; Created/Designed the activity_main layout (15 minutes).
+
+        ; Created the activity_game layout (5 minutes).
+
+Total Time: ~ 3 Hours 40 Minutes
+
+18 January 2018
+
+    ; Models:
+        ; Added a getStoneColorAtPosition function to the Board class that returns the color of stone
+        ; at a certain row and column position on the board (10 minutes).
+
+    ; Views:
+        ; Implemented an updateView function in the GameActivity class that updates the view with all
+        ; the proper information (30 minutes).
+
+        ; Created a BoardView class to handle displaying and updating the board properly (10 minutes).
+
+        ; Implemented the updateBoardView function in the BoardView class which properly updates
+        ; and displays the board when called upon (40 minutes).
+
+    ; Layouts:
+        ; Designed the activity_game layout, it now displays all the pertinent information
+        ; for the game as well as the grid for the board (40 minutes).
+
+Total Time: ~ 2 Hours 10 Minutes
+
+21 January 2018
+
+    ; Models:
+        ; Implemented the isPositionWhite function in the board class which determines if a given position
+        ; is occupied by a white stone (10 minutes).
+
+        ; Implemented the isPositionBlack function in the board class which determines if a given position
+        ; is occupied by a black stone (10 minutes).
+
+        ; Implemented the isPositionOpen function in the board class which determines if a given position
+        ; is vacant (10 minutes).
+
+        ; Implemented the removeInitialStones function in the board class which removes a black and white
+        ; stone randomly from the board at the beginning of a game (30 minutes).
+
+    ; Views:
+        ; Implemented the getPositionCoordinates function in the GameActivity class which gets the row and column
+        ; values of the position on the grid clicked by a user and converts them to an array of integers (30 minutes).
+
+        ; Implemented the highlightPosition function in the GameActivity class which will highlight the position
+        ; on the grid of the given row and column values (20 minutes).
+
+        ; Began implementing the makeMove function in the GameActivity class so that it utilizes the getPositionCoordinates
+        ; and highlightPosition functions. Currently works to the point where a clicked position is highlighted properly (30 minutes).
+
+    ; Layouts:
+        ; Created the buttonborder_hl drawable resource which is the resource used for a position that has been highlighted (5 minutes).
+
+Total Time: ~ 2 Hours 25 Minutes
+
+22 January 2018
+
+    ; Models:
+        ; Implemented the isMoveValid function in the Board class which determines if a given move is lateral or vertical
+        ; and then calls the appropriate corresponding functions (20 minutes).
+
+        ; Began implementing the isLateralMoveValid function in the Board class which determines if a given lateral move is valid (15 minutes).
+
+        ; Began implementing the isVerticalMoveValid function in the Board class which determines if a given vertical move is valid (15 minutes).
+
+    ; Views:
+        ; Added the unselectAllButtonHandler function to the GameActivity class that handles the user clicking on the unselect all button
+        ; (30 minutes).
+
+        ; Added the makeMoveButtonHandler function to the GameActivity class that handles the user click on the Make Move button,
+        ; handler ensures that both a stone and vacant puka have been selected prior to attempting to make a move (30 minutes).
+
+    ; Layouts:
+        ; Added an Unselect All button to the activity_game layout that will unhighlight all the selected positions on the grid
+        ; when the user clicks it (5 minutes).
+
+        ; Added a Make Move button to the activity_game layout that allows the user to make a move when clicked (5 minutes).
+
+
+Total Time: ~ 2 Hours
+
+24 January 2018
+
+    ; Models:
+        ; Finished the isLateralMoveValid function in the Board class (20 minutes).
+
+        ; Finished the isVerticalMoveValid function in the Board class (20 minutes).
+
+        ; Implemented the isRightMoveValid function in the Board class (1 Hour).
+
+        ; Implemented the isLeftMoveValid function in the Board class (15 minutes).
+
+        ; Implemented the isNorthMoveValid function in the Board class (20 minutes).
+
+        ; Implemented the isSouthMoveValid function in the Board class (15 minutes).
+
+        ; Implemented the verifyStoneCount function in the Board class (10 minutes).
+
+    ; Views:
+
+    ; Layouts:
+
+
+Total Time: ~ 2 Hours 40 Minutes
+
+25 January 2018
+
+    ; Models:
+        ; Implemented the modifyBoard function in the Board class (10 minutes).
+
+        ; Implemented the laterallyModifyBoard function in the Board class (30 minutes).
+
+        ; Implemented the verticallyModifyBoard function in the Board class (30 minutes).
+
+        ; Implemented the getNumWhiteStonesCaptured function (5 minutes).
+
+        ; Implemented the getNumBlackStonesCaptured function (5 minutes).
+
+    ; Views:
+        ; Created the EndGameActivity class for when the game ends (5 minutes).
+
+    ; Layouts:
+
+
+Total Time: ~ 1 Hour 25 Minutes
+
+28 January 2018
+
+    ; Models:
+        ; Implemented the canMakePlay function in the Human class which determines if a given player
+        ; can make a move (10 minutes).
+
+        ; Implemented the canMakePlay function in the Board class which determines if a given player
+        ; can make a move in a lateral or vertical direction based on the current board (50 minutes).
+
+    ; Views:
+        ; Added a button handler function to the GameActivity class for the "Pass Play" button (20 minutes).
+
+        ; Extended the updateView function of the GameActivity class to utilize the new canMakePlay function from
+        ; the Human class (10 minutes).
+
+        ; Fully implemented the EndGameActivity class (45 minutes).
+
+    ; Layouts:
+        ; Added a "Pass Play" button to the activity_game layout that allows a player to explicitly pass their
+        ; play, allows user to check the board (10 minutes).
+
+        ; Created and designed the activity_endgame layout (20 minutes).
+
+Total Time: ~ 2 Hours 45 Minutes
+
+30 January 2018
+
+    ; Models:
+
+    ; Views:
+        ; Modified the BoardView class to utilize the new drawables (20 minutes).
+
+        ; Modified the GameActivity class to utilize the new drawables (20 minutes).
+
+    ; Layouts:
+        ; Created drawables of actual stones to use for the board rather than ASCII Text (30 minutes).
+
+Total Time: ~ 1 Hour 10 Minutes
+
+-----------------------------------------------------------------------------------------------------
+*****************************************************************************************************
+                                                Project 2
+*****************************************************************************************************
+-----------------------------------------------------------------------------------------------------
+
+
+7 February 2018
+    ; Models:
+        ; Fully implemented the Serializer class which provides the ability to restore a saved game from a file,
+        ; and save a game to a file (1 Hour).
+
+    ; Views:
+        ; Added a button handler to the GameActivity class for when the user hits the save game button (10 minutes).
+
+        ; Added a button handler for the Next Move button to the GameActivity class for when the user hits the
+        ; Next Move button, not implemented yet (10 minutes).
+
+        ; Added a button handler to the MainActivity class for when the user hits the load game button (10 minutes).
+
+        ; Added the functionality necessary to implement the file spinner to the MainActivity class (1 Hour).
+
+    ; Layouts:
+        ; Added a save game and next move button to the activity_game layout to add functionality
+        ; for serialization and the next move displays for the algorithms(10 minutes).
+
+        ; Added a load game button to the activity_main layout so the user can load a game
+        ; from a saved file (10 minutes).
+
+        ; Added a file spinner to the activity_main layout so the user can select a file to
+        ; load a game from easily (10 minutes).
+
+Total Time: ~ 3 Hours
+
+9 February 2018
+    ; Models:
+        ; Reworked the serializer class to work with external storage (1 Hour).
+
+    ; Views:
+
+    ; Layouts:
+
+Total Time: ~  1 Hour
+
+10 February 2018
+    ; Models:
+        ;
+
+    ; Views:
+        ; Added the functionality required for the algorithm selection spinner to the GameActivity class (1 Hour).
+
+    ; Layouts:
+        ; Added a spinner for the selection of algorithms to the activity_game layout (20 minutes).
+
+Total Time: ~  1 Hour
+
+13 February 2018
+    ; Models:
+        ; Implemented the depthFirstSearch function in the Game class which constructs a search tree
+        ; and finds the next best available move per the algorithm (1 Hour).
+
+        ; Implemented the breadthFirstSearch function in the Game class which constructs a search tree
+        ; and finds the next best available move per the algorithm (1 Hour).
+
+        ; Implemented the isPositionPlayable function in the Game class which determines if a given position
+        ; can be played from in the proper order given by the project description - North, East, South, West
+        ; (30 minutes).
+
+    ; Views:
+
+    ; Layouts:
+
+Total Time: ~  2 Hours 30 Minutes
+
+13 February 2018
+    ; Models:
+        ; Implemented the isNorthAvailable function in the Board class to determine if a move to the north
+        ; is available from a given position (20 minutes).
+
+        ; Implemented the isSouthAvailable function in the Board class to determine if a move to the south
+        ; is available from a given position (10 minutes).
+
+        ; Implemented the isEastAvailable function in the Board class to determine if a move to the east
+        ; is available from a given position (10 minutes).
+
+        ; Implemented the isWestAvailable function in the Board class to determine if a move to the west
+        ; is available from a given position (10 minutes).
+
+        ; Implemented the addToMovesList function in the Game class which adds moves to a given list of moves for
+        ; any given algorithm selected (30 minutes).
+
+        ; Implemented the getNextAvailableMove function in the Game class which gets the next available move
+        ; from a list for the selected, given algorithm (30 minutes).
+
+    ; Views:
+
+    ; Layouts:
+
+Total Time: ~ 1 Hour 50 Minutes
+
+14 February 2018
+    ; Models:
+        ; Spent a large amount of time trying to fix the depth first and breadth first search algorithms (4 Hours).
+
+        ; Views:
+
+        ; Layouts:
+
+Total Time: ~ 4 Hours
+
+15 February 2018
+    ; Models:
+        ; Implemented the best first search function in the Game class which builds a tree and executes
+        ; the best first search algorithm (2 Hours).
+
+        ; Implemented the getBestMoves function which is the heuristic function for the best first search
+        ; algorithm (2 Hours).
+
+    ; Views:
+
+    ; Layouts:
+
+Total Time: ~ 4 Hours
+

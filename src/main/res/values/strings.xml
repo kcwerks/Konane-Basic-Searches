@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Konane</string>
+
+    <string-array name="filesArray">
+        <item>Select File: </item>
+        <item>Case1.txt</item>
+        <item>Case2.txt</item>
+        <item>Case3.txt</item>
+        <item>SavedGame.txt</item>
+    </string-array>
+
+    <string-array name="algoArray">
+        <item>" Algorithm: "</item>
+        <item>Depth-First</item>
+        <item>Breadth-First</item>
+        <item>Best-First</item>
+    </string-array>
+
+</resources>

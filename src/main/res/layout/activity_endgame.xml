@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="edu.ramapo.kcalabro.konane.view.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ili Ele (Black Stones) Score:"
+            android:id="@+id/blackStoneScore"
+            android:textColor="#000000"
+            android:textSize="48sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Ili Kea (White Stones) Score:"
+            android:gravity="center"
+            android:id="@+id/whiteStoneScore"
+            android:textColor="#000000"
+            android:textSize="48sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Winner:"
+        android:gravity="center"
+        android:id="@+id/winner"
+        android:textColor="#000000"
+        android:textSize="48sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   Main Menu   "
+            android:textSize="40sp"
+            android:id="@+id/mainMenuButton"
+            android:background="@drawable/buttonborder"
+            android:layout_marginTop="80dp"
+            android:onClick="mainMenu"/>
+
+    </LinearLayout>
